@@ -5,7 +5,7 @@ name: CBA Devops Project Pipeline
 on:
   push:
     branches:
-      - main
+        - main    
 
 jobs:
   build_and_push:
@@ -25,3 +25,4 @@ jobs:
       - name: Push to Dockerhub
         run: |
           docker push TheGreatGenius/cba-devops-project:${{ env.SHORT_SHA }} 
+          
