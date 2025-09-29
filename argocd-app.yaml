@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cba-devops-project
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL :"https://github.com/TheGreatGenius/cba-devops-project"
+    targetRevision: HEAD
+    path: cba-devops-project-time-printer
+  destination:
+    server: "https://kubernetes.default.svc"  
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true  
+      selfHeal: true
+      
