@@ -1,6 +1,6 @@
 image:
   repository: kingdavid24/cba-devops-project
-  tag: c43474f
+  tag: 03baa7f
   pullPolicy: IfNotPresent
 service: 
   type: ClusterIP
