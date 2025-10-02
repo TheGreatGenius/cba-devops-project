@@ -6,14 +6,14 @@ metadata:
 spec:
   project: default
   source:
-    repoURL :"https://github.com/TheGreatGenius/cba-devops-project"
+    repoURL :https://github.com/TheGreatGenius/cba-devops-project
     targetRevision: HEAD
     path: cba-devops-project-time-printer
   destination:
-    server: "https://kubernetes.default.svc"  
+    server: https://kubernetes.default.svc  
     namespace: default
   syncPolicy:
     automated:
       prune: true  
       selfHeal: true
-      
+    
