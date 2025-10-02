@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL :https://github.com/TheGreatGenius/cba-devops-project
+    repoURL : https://github.com/TheGreatGenius/cba-devops-project
     targetRevision: HEAD
     path: cba-devops-project-time-printer
   destination:
